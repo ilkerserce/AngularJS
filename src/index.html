@@ -1,13 +1,51 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>AngularJS</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- <script src="/src/angular.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
 </head>
-<body>
-  <app-root></app-root>
+
+<body class="text-bg-dark">
+
+  <div class="d-flex flex-column">
+    <navbar class="navbar navbar-dark navbar-expand-lg d-inline-flex flex-wrap border-bottom align-items-center">
+      <div class="ms-2 col-12 col-md-1 text-center text-md-start">
+        <h1>AngularJS</h1>
+      </div>
+      <div class="col-12 col-md-8 text-center">Header</div>
+      <div class="col-12 col-md-2 text-end"><small>
+          <p class="py-0 my-0">Tarih: 09.09.2022</p>
+          <p>Angular Öğreniyorum.</p>
+        </small></div>
+    </navbar>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <p>My first expression: {{ 5 + 5 }}</p>
+          <p>{{"Bu örnek bir paragraf."}}</p>
+        </div>
+        <div ng-app="col-12 col-lg-6">
+          <p>My first expression: {{ 5 + 5 }}</p>
+          <p>{{"Bu örnek bir paragraf."}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
+
 </html>
